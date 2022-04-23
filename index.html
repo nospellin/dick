@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="adapt.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Maket 2</title>
+</head>
+<body>
+    <!-- Обёртка сайта -->
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="логотип">
+                <h2>CROWDME</h2>
+            </div>
+            <nav class="header-nav">
+                <button class="header-nav__btn">home</button><button class="header-nav__btn">how it works</button><button class="header-nav__btn">discover a project</button><button class="header-nav__btn">blog</button><button class="header-nav__btn">find out more</button>
+            </nav>
+            <button class="header-nav__btn btn-login">login</button>
+        </header>
+        <!-- Главный баннер -->
+        <section class="main-banner" id="mbnr">
+            <article class="juicy" id="main_article"><h1>Intellectual Property has the Shelf Life <span style="font-weight: normal;font-size: 35px;"><br>Of a Banana</span></h1>
+            <button class="main-banner__btn">Become a Member</button></article>
+        </section>
+        <!-- Репрезентация -->
+        <section class="work-presentation">
+            <article>
+                <img src="images/icon.png" alt="иконка">
+                <h2>Our Work is the presentation of our capabilities</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p> <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            </article>
+        </section>
+            <!-- Достоинства в строке -->
+            <section class="advantages-container">
+                <section class="advantages-title">
+                    <div class="advantages" onclick="MoveLineTo1()"><div class="advantage-circle">1</div>Simple</div>
+                    <div class="advantages" onclick="MoveLineTo2()"><div class="advantage-circle">2</div>Transparency</div>
+                    <div class="advantages" onclick="MoveLineTo3()"><div class="advantage-circle">3</div>Collaborative</div>
+                </section>
+                <div class="advantage-interactive-line">
+                    <div class="advantage-interactive-line__part" id="green_line">
+                        2
+                    </div>
+                </div>
+                <!-- Объяснения достоинства -->
+                <section class="advantage-explaining">
+                    <img src="images/glasses.png" alt="Очки">
+                    <div class="advantage-explaining__text_wrapper">
+                        <h3 id="adv_title">Browse projects, like booking a hotel online!</h3>
+                        <p id="adv_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </section>
+            </section>
+            <section class="offerings">
+                <section class="find-properties">
+                    <img src="images/bad.png" alt="кровать">
+                    <div class="find-propreties__text-wrapper">
+                        <h3>Find Properties</h3>
+                        <p>Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.</p>
+                        <button class="blue-btn">Become A Member</button>
+                    </div>
+                </section>
+                <section class="find-buyers">
+                    <img src="images/money.png" alt="бумажник">
+                    <div class="find-propreties__text-wrapper">
+                        <h3>Find Buyers</h3>
+                        <p>Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.</p>
+                        <button class="green-btn">Submit Your Project</button>
+                </section>
+            </section>
+        <!-- Связанные проекты -->
+        <section class="featured-projects">
+            <section class="featured-projects__head">
+                <article class="featured-projects__head-article">
+                    <h2>Featured Projects</h2>
+                    <p>Brief deta is of new and popular projects. To view full listings, you will be required to sign up and become a member.</p>
+                </article>
+                <button class="featured-projects__head-btn">Become a Member</button>
+            </section>
+            <section class="featured-projects__card-container">
+                <section class="featured-projects__card-container__card">
+                    <div class="card__img-wrapper">
+                        <img src="images/project1.png" alt="card">
+                    </div>
+                    <section class="card__txt-wrapper">
+                        <h3>Ontario Tower, LONDON</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua.</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar__value" id="progress_bar_val"></div>
+                        </div>
+                        <p style="font-weight:bold">10% Funded
+                            <span class="percent-funded">8 Days Left</span>
+                        </p>
+                    </section>
+                    <hr>
+                    <div class="project-details-wrapper">
+                        <a href="#">See Project Details</a>
+                    </div>
+                </section>
+                <section class="featured-projects__card-container__card">
+                    <div class="card__img-wrapper">
+                        <img src="images/project2.png" alt="card">
+                    </div>
+                    <section class="card__txt-wrapper">
+                        <h3>Ontario Tower, LONDON</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua.</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar__value"></div>
+                        </div>
+                        <p style="font-weight:bold">10% Funded
+                            <span class="percent-funded">8 Days Left</span>
+                        </p>
+                    </section>
+                    <hr>
+                    <div class="project-details-wrapper">
+                        <a href="#" onclick="ProgressFiller()">See Project Details</a>
+                    </div>
+                </section>
+                <section class="featured-projects__card-container__card">
+                    <div class="card__img-wrapper">
+                        <img src="images/project3.png" alt="card">
+                    </div>
+                    <section class="card__txt-wrapper">
+                        <h3>Ontario Tower, LONDON</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua.</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar__value"></div>
+                        </div>
+                        <p style="font-weight:bold">10% Funded
+                            <span class="percent-funded">8 Days Left</span>
+                        </p>
+                    </section>
+                    <hr>
+                    <div class="project-details-wrapper">
+                        <a href="#">See Project Details</a>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- Отзывы крутых людей -->
+        <section class="reports">
+            <article>
+                <h2>Be Part of a Growing International Community</h2>
+                <h3>One of the challenges in networking is everybody thinks it's making cold calls to stranges. Actually, it's the people who already have strong trust relationships with you</h3>
+            </article>
+            <section class="reports-container">
+                <section class="report-item">
+                    <section class="speech-bubble">
+                        <h4>One of the Best</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+                    </section>
+                    <div class="report-author">
+                        <img src="images/foto.png" alt="Дэвид Бэкхэм">
+                        <h5>John Long</h5>
+                    </div>
+                </section>
+                <section class="report-item">
+                    <section class="speech-bubble">
+                        <h4>One of the Best</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+                    </section>
+                    <div class="report-author">
+                        <img src="images/foto 2.png" alt="Дэвид Бэкхэм">
+                        <h5>Denis Peace</h5>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- Подвал -->
+    </div>
+    <footer class="footer">
+        <!-- Партнёры -->
+        <section class="footer__partners">
+            <img src="images/partners.png" alt="партнёры">
+        </section>
+        <!-- Копирайт сайта -->
+        <hr>
+        <section class="footer__copyright">
+            Copyright © 2001 - 2014  Cssauthor.com
+            <span class="secret">С днём Елены Феликсовны!!!</span>
+        </section>
+    </footer>
+</body>
+
+<script>
+    window.green_line = document.getElementById('green_line');
+    window.mbnr = document.querySelector('.juicy');
+    window.progress_bar = document.getElementById('progress_bar_val');
+    window.advantage_title = document.getElementById('adv_title');
+    window.advantage_txt = document.getElementById('adv_txt');
+    function MoveLineTo1(){
+        green_line.style.left = "0";
+        green_line.style.width = '33.33%';
+        advantage_title.innerHTML = "Browse projects, like booking a hotel online!";
+        advantage_txt.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    }
+    function MoveLineTo2(){
+        green_line.style.left = "33%";
+        green_line.style.width = '35%';
+        advantage_title.innerHTML = "We won't try to steal your owns!";
+        advantage_txt.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    }
+    function MoveLineTo3(){
+        green_line.style.left = "66%";
+        green_line.style.width = '100%';
+        advantage_title.innerHTML = "Connect with successful people to make profit!";
+        advantage_txt.innerHTML = "Join to us and you will be able to cooperate with the most famous web-developer Vohmenina Elena Feliksovna! Besides Elena we have Denis Mirnov, Maxim Yurov, Danil Permyakov and Timur Magomedov!";
+    }
+    function ProgressFiller() {
+        progress_bar.style.width = "100%";
+    }
+</script>
+</html>
